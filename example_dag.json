@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "name": "get_data",
+      "args": [],
+      "kwargs": {}
+    },
+    {
+      "name": "split_data",
+      "args": [
+        {
+          "type": "value",
+          "id": 0
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "name": "create_preprocess_data",
+      "args": [
+        {
+          "type": "value",
+          "id": 1
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "name": "create_evaluate_model",
+      "args": [
+        {
+          "type": "value",
+          "id": 6
+        },
+        {
+          "type": "value",
+          "id": 3
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "name": "preprocess_data",
+      "args": [
+        {
+          "type": "value",
+          "id": 5
+        },
+        {
+          "type": "value",
+          "id": 2
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "name": "evaluate_model",
+      "args": [
+        {
+          "type": "value",
+          "id": 7
+        },
+        {
+          "type": "value",
+          "id": 9
+        },
+        {
+          "type": "value",
+          "id": 4
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "name": "visualize_metrics",
+      "args": [
+        {
+          "type": "value",
+          "id": 8
+        },
+        {
+          "type": "value",
+          "id": 10
+        }
+      ],
+      "kwargs": {}
+    }
+  ],
+  "values": [
+    {
+      "src_node_idx": 0,
+      "src_output_idx": 0,
+      "name": "data"
+    },
+    {
+      "src_node_idx": 1,
+      "src_output_idx": 0,
+      "name": "X_train"
+    },
+    {
+      "src_node_idx": 1,
+      "src_output_idx": 1,
+      "name": "X_test"
+    },
+    {
+      "src_node_idx": 1,
+      "src_output_idx": 2,
+      "name": "y_train"
+    },
+    {
+      "src_node_idx": 1,
+      "src_output_idx": 3,
+      "name": "y_test"
+    },
+    {
+      "src_node_idx": 2,
+      "src_output_idx": 0,
+      "name": "preprocessor"
+    },
+    {
+      "src_node_idx": 2,
+      "src_output_idx": 1,
+      "name": "X_train"
+    },
+    {
+      "src_node_idx": 3,
+      "src_output_idx": 0,
+      "name": "model"
+    },
+    {
+      "src_node_idx": 3,
+      "src_output_idx": 1,
+      "name": "metrics_train"
+    },
+    {
+      "src_node_idx": 4,
+      "src_output_idx": 0,
+      "name": "X_test"
+    },
+    {
+      "src_node_idx": 5,
+      "src_output_idx": 0,
+      "name": "metrics_test"
+    }
+  ]
+}
